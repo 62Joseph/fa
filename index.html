@@ -5,144 +5,144 @@
 <title>Exam Dashboard</title>
 
 <style>
-*{
-    box-sizing:border-box;
-    font-family:"Segoe UI",Tahoma,sans-serif;
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
-body{
-    margin:0;
-    background:#0f0f0f;
-    color:#e0e0e0;
+body {
+    margin: 0;
+    background: #0f0f0f;
+    color: #e0e0e0;
 }
 
 /* ===== Top Bar ===== */
-.top-bar{
-    height:60px;
-    background:#1a1a1a;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:0 20px;
-    border-bottom:1px solid #2a2a2a;
+.top-bar {
+    height: 60px;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid #2a2a2a;
 }
 
-.user-info{
-    display:flex;
-    align-items:center;
-    gap:10px;
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.avatar{
-    width:34px;
-    height:34px;
-    border-radius:50%;
-    background:#3a3a3a;
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #3a3a3a;
 }
 
-.user-text{
-    display:flex;
-    flex-direction:column;
-    font-size:13px;
+.user-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
 }
 
-.user-text span:first-child{
-    color:#9a9a9a;
-    font-size:12px;
+.user-text span:first-child {
+    color: #9a9a9a;
+    font-size: 12px;
 }
 
-.icons{
-    display:flex;
-    align-items:center;
-    gap:16px;
-    color:#bdbdbd;
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #bdbdbd;
 }
 
-.icon{
-    width:18px;
-    height:18px;
-    stroke:#bdbdbd;
-    stroke-width:2;
-    fill:none;
-    cursor:pointer;
-}
-
-/* ===== Tabs ===== */
-.tabs{
-    display:flex;
-    justify-content:center;
-    gap:120px;
-    background:#000;
-    border-bottom:1px solid #1f1f1f;
-}
-
-.tab{
-    padding:14px 0;
-    color:#9a9a9a;
-    font-size:14px;
-    position:relative;
+.icon {
+    width: 18px;
+    height: 18px;
+    stroke: #bdbdbd;
+    stroke-width: 2;
+    fill: none;
     cursor: pointer;
 }
 
-.tab.active{
-    color:#4da3ff;
+/* ===== Tabs ===== */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    background: #000;
+    border-bottom: 1px solid #1f1f1f;
 }
 
-.tab.active::after{
-    content:"";
-    position:absolute;
-    bottom:0;
-    left:0;
-    width:100%;
-    height:2px;
-    background:#4da3ff;
+.tab {
+    padding: 14px 0;
+    color: #9a9a9a;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+
+.tab.active {
+    color: #4da3ff;
+}
+
+.tab.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #4da3ff;
 }
 
 /* ===== Content ===== */
-.content{
-    padding:30px 40px;
+.content {
+    padding: 30px 40px;
 }
 
-.header-row{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:20px;
-    font-size:14px;
-    color:#bdbdbd;
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #bdbdbd;
 }
 
-.toggle{
-    display:flex;
-    align-items:center;
-    gap:10px;
+.toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.toggle-switch{
-    width:42px;
-    height:22px;
-    background:#3a3a3a;
-    border-radius:11px;
-    position:relative;
+.toggle-switch {
+    width: 42px;
+    height: 22px;
+    background: #3a3a3a;
+    border-radius: 11px;
+    position: relative;
 }
 
-.toggle-switch::after{
-    content:"";
-    width:18px;
-    height:18px;
-    background:#fff;
-    border-radius:50%;
-    position:absolute;
-    top:2px;
-    right:2px;
+.toggle-switch::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    right: 2px;
 }
 
 /* ===== Exam Card ===== */
-.exam-card{
-    background:#1c1c1c;
-    border-radius:10px;
-    padding:20px;
-    border:1px solid #2c2c2c;
+.exam-card {
+    background: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #2c2c2c;
     position: relative;
     overflow: hidden;
 }
@@ -157,55 +157,133 @@ body{
     background: #4da3ff;
 }
 
-.exam-header{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:15px;
+.exam-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
 }
 
-.exam-title{
-    font-size:16px;
-    font-weight:600;
+.exam-title {
+    font-size: 16px;
+    font-weight: 600;
 }
 
-.exam-date{
-    font-size:13px;
-    color:#b0b0b0;
-    text-align:right;
-    line-height:1.4;
+.exam-date {
+    font-size: 13px;
+    color: #b0b0b0;
+    text-align: right;
+    line-height: 1.4;
 }
 
-.exam-details{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    row-gap:12px;
-    font-size:14px;
-    color:#bdbdbd;
+.exam-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 12px;
+    font-size: 14px;
+    color: #bdbdbd;
 }
 
-.exam-details .value{
-    color:#ffffff;
-    justify-self:end;
+.exam-details .value {
+    color: #ffffff;
+    justify-self: end;
 }
 
-.exam-details .value.status-ended{
-    color:#4da3ff;
+.exam-details .value.status-ended {
+    color: #4da3ff;
 }
 
-.view-score{
-    margin-top:20px;
-    width:100%;
-    padding:12px;
-    background:transparent;
-    border:1px solid #4da3ff;
-    border-radius:8px;
-    color:#4da3ff;
-    font-size:14px;
-    cursor:pointer;
+.view-score {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid #4da3ff;
+    border-radius: 8px;
+    color: #4da3ff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.view-score:hover {
+    background: rgba(77, 163, 255, 0.1);
 }
 
 .hidden {
-    display: none;
+    display: none !important;
+}
+
+/* ===== Modal (Popup) ===== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* خلفية مظللة */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-box {
+    background: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    width: 340px;
+    padding: 35px 25px 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.modal-icon {
+    position: absolute;
+    top: -25px; /* رفع الأيقونة للأعلى */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background: #2b78e4;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: serif;
+    color: white;
+}
+
+.modal-title {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.modal-text {
+    font-size: 13px;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.modal-btn {
+    width: 100%;
+    padding: 10px;
+    background: #2b78e4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.modal-btn:hover {
+    background: #1f5eb5;
 }
 </style>
 </head>
@@ -272,12 +350,21 @@ body{
                 <span class="value">Uploaded</span>
             </div>
 
-            <button class="view-score">View Score</button>
+            <button class="view-score" onclick="openModal()">View Score</button>
         </div>
     </div>
     
     <div id="no-exams-msg" class="hidden" style="text-align:center; color:#ffffff; margin-top:50px; font-size:16px;">
         No data found!
+    </div>
+</div>
+
+<div id="score-modal" class="modal-overlay hidden">
+    <div class="modal-box">
+        <div class="modal-icon">i</div>
+        <div class="modal-title">Notification</div>
+        <div class="modal-text">Exam Result is not published. Once your result is published, you will receive a notification.</div>
+        <button class="modal-btn" onclick="closeModal()">Ok</button>
     </div>
 </div>
 
@@ -303,9 +390,16 @@ body{
             countSpan.textContent = '0';
         }
     }
+
+    // دوال النافذة المنبثقة
+    function openModal() {
+        document.getElementById('score-modal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+        document.getElementById('score-modal').classList.add('hidden');
+    }
 </script>
 
 </body>
 </html>
-
-
